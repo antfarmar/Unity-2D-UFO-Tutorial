@@ -11,6 +11,7 @@ using UnityEngine.UI;
 [System.Serializable]
 public class ScoreEvent : UnityEvent<int> { }
 
+// Controls the UFO by handling input. Also handles collisions with pickups, and messaging the UI via UnityEvents.
 public class PlayerController : MonoBehaviour
 {
 
@@ -38,9 +39,6 @@ public class PlayerController : MonoBehaviour
 
         // Store the current vertical input in the float moveVertical.
         float moveVertical = Input.GetAxis("Vertical");
-
-        // Use the two store floats to create a new Vector2 variable movement.
-        Vector2 movement = new Vector2(moveHorizontal, moveVertical);
 
         // Call the AddForce function of our Rigidbody2D rb2d supplying movement multiplied by speed to move our player.
         rb2d.AddForce(speed * new Vector2(moveHorizontal, moveVertical));

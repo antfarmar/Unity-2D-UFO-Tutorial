@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// Controls the pickup animations kinematically (rigidbody).
 public class PickupController : MonoBehaviour
 {
 
