@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Completed/Scenes/Main (Completed).unity
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/UFOGame_MyVersion/Scenes/Main.unity
+    guid: 35f10b7a91a506244874f0354864152a
